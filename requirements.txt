@@ -19,6 +19,7 @@ inflection==0.5.1
 jsonschema==4.23.0
 jsonschema-specifications==2024.10.1
 Markdown==3.7
+mysqlclient==2.2.7
 phonenumbers==8.13.55
 pillow==11.1.0
 psycopg==3.2.5
