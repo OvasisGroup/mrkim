@@ -89,31 +89,31 @@ WSGI_APPLICATION = 'mrkim.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mrkim',
-        'USER': 'ovasis',
-        'PASSWORD': 'Omondi12!',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    }
-}
-
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'neondb',
-#         'USER': 'neondb_owner',
-#         'PASSWORD': 'npg_kcvYSOtR8l5x',  # Replace with your actual password
-#         'HOST': 'ep-divine-wave-a8fcos7i-pooler.eastus2.azure.neon.tech',
-#         'PORT': '5432',
-#         'OPTIONS': {
-#             'sslmode': 'require',
-#         },
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'mrkim',
+#         'USER': 'ovasis',
+#         'PASSWORD': 'Omondi12!',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
 #     }
 # }
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mrkim',
+        'USER': 'ovasis',
+        'PASSWORD': 'Omondi12',  # Replace with your actual password
+        'HOST': 'localhost',
+        'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'require',
+        },
+    }
+}
 
 
 # Password validation
