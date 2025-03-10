@@ -68,13 +68,13 @@ class FaqHeadersAdmin(admin.ModelAdmin):
     list_display = ('title',)
     search_fields = ('title',)
 
-admin.site.register(FaqHeaders, FaqHeadersAdmin)
+admin.site.register(FaqHeaders, ImportExportModelAdmin)
 
 class FaqAdmin(admin.ModelAdmin):
     list_display = ('headers', 'title', 'body')
     search_fields = ('title', 'body')
 
-admin.site.register(Faq, FaqAdmin)
+admin.site.register(Faq, ImportExportModelAdmin)
 
 class PremiumTitlesAdmin(admin.ModelAdmin):
     list_display = ('name',)
