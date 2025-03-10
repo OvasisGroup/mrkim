@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'website',
     'cleaning',
     'import_export',
-    'drf_spectacular',
+    # 'drf_spectacular',
+    'drf_yasg',
     'django_filters',
     'ckeditor',
 
@@ -173,19 +174,19 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     ],
-    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+    # 'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
 
-SPECTACULAR_SETTINGS = {
-    'TITLE': 'Mr. Kim Project API Documentation',
-    'DESCRIPTION': 'Mr. Kim is a Job Search and Posting Platform for East Africa',
-    'VERSION': '1.0.0',
-    'SERVE_INCLUDE_SCHEMA': False,
-    'DEFAULT_AUTO_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
-    'DEFAULT_INFO': 'mrkim.urls',
-    'DEFAULT_TAGS': ['mrkim'],
-    # OTHER SETTINGS
-}
+# SPECTACULAR_SETTINGS = {
+#     'TITLE': 'Mr. Kim Project API Documentation',
+#     'DESCRIPTION': 'Mr. Kim is a Job Search and Posting Platform for East Africa',
+#     'VERSION': '1.0.0',
+#     'SERVE_INCLUDE_SCHEMA': False,
+#     'DEFAULT_AUTO_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+#     'DEFAULT_INFO': 'mrkim.urls',
+#     'DEFAULT_TAGS': ['mrkim'],
+#     # OTHER SETTINGS
+# }
 
 
